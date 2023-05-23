@@ -1,9 +1,15 @@
 
 function Random() {
-    const randomMax = Math.floor(Math.random()*6)
-    const randomMin = Math.floor(Math.random()*100)
+    const randomNumber = Math.floor(Math.random()*(6 -1)+ 1)
+    const randomNumber2 = Math.floor(Math.random()*(100 -1)+ 1)
+    
   return (
-    <div>Random</div>
+
+    
+    <div >
+      <p className="random">Random value between 1 and 6 = {randomNumber}</p>
+      <p className="random">Random value between 1 and 100 = {randomNumber2}</p>
+    </div>
   )
 }
 
